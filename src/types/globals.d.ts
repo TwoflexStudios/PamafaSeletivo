@@ -5,3 +5,8 @@ declare global {
         }
     }
 }
+
+interface IMenuProps {
+    link: string;
+    headerTitle: string;
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "link":"home",
+        "headerTitle":"Pagina Inicial"
+    },
+    {
+        "link":"usuarios",
+        "headerTitle":"Lista de Usuarios"
+    },
+    {
+        "link":"produtos",
+        "headerTitle":"Produtos"
+    }
+]

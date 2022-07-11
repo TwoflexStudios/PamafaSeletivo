@@ -16,6 +16,7 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
+    
     "plugins": [
         "react",
         "@typescript-eslint"
@@ -30,15 +31,35 @@
     "rules": {
         "quotes": ["error", "single"],
         "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+        "react/react-in-jsx-scope": "off",
+        "import/prefer-default-export":"off",
+        "global-require": "off",
         "import/extensions": [
             "error",
             "ignorePackages",
             {
-              "js": "never",
-              "jsx": "never",
-              "ts": "never",
-              "tsx": "never"
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
             }
-         ]
+        ],
+        "react/function-component-definition": [
+            2,
+            {
+              "namedComponents": "arrow-function",
+              "unnamedComponents": "arrow-function"
+            }
+        ],
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-empty-interface": "off",
+        "react/no-array-index-key": "off",
+        "no-unused-expressions": "off",
+        "react/jsx-props-no-spreading": "off",
+        "no-param-reassign": "off",
+        "consistent-return": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-explicit-any":"off"
     }
 }

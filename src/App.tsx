@@ -1,11 +1,8 @@
-import React from 'react';
+import Header from './components/header';
+import Rotas from './Router';
 
-function App() {
-  return (
-    <div className="App">
-      hello
-    </div>
-  );
-}
+const App = () => (
+  <Rotas />
+);
 
 export default App;
