@@ -34,11 +34,13 @@ const UsersScreen = (props:any) => {
     setFetchingUsers(false);
   };
 
+  const getRandomPicture = () => `https://placeimg.com/620/${Math.floor(Math.random() * (900 - 50)) + 50}/people`;
+
   return (
     <Container style={{ justifyContent: 'center', alignItems: 'center' }}>
       <Header pageTitle="Lista de usuários" />
       <Content>
-        {fetchingUsers === true
+        {fetchingUsers === true && users.length === 0
           ? (
             <div className="lds-roller">
               <div />
@@ -56,9 +58,7 @@ const UsersScreen = (props:any) => {
               key={item.id}
               name={`${item.firstname} ${item.lastname}`}
               username={item.username}
-              image={
-                `https://placeimg.com/620/${Math.floor(Math.random() * (500 - 100)) + 100}/people`
-              }
+              image={getRandomPicture()}
               site={item.website}
               email={item.email}
             />
