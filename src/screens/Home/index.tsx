@@ -1,8 +1,11 @@
 import Header from '../../components/header';
-import { Container } from './styles';
+import { Container } from '../global_styles';
 
 const HomeScreen = (props:any) => (
-  <Header />
+  <Container>
+    <Header pageTitle="Pagina Inicial" />
+    <h1>teste</h1>
+  </Container>
 );
 
 export default HomeScreen;

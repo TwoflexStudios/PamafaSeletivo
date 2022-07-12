@@ -34,9 +34,15 @@ export const MenuItem = styled.div`
     margin-left: 10px;
     margin-right: 10px;
     cursor: pointer;
-    
-    &:hover{
-        color: white;
+
+    .link{
+        font-size: 18px;
+        color: #C9CDD5;
+        text-decoration: none;
+
+        &:hover{
+            color: white;
+        }
     }
 `;
 
