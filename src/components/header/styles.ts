@@ -48,7 +48,7 @@ export const MenuItem = styled.div`
 
 export const Container = styled.div`
     width: 100%;
-    height: 180px;
+    height: 150px;
     background-color: #00275B;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
